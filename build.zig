@@ -104,7 +104,7 @@ fn installCapyDependencies(b: *std.Build, module: *std.Build.Module, options: Ca
                 // TODO: find a way to contory ZigAndroidTemplate enough so it fits into the Zig build system
             } else {
                 module.link_libc = true;
-                module.linkSystemLibrary("gtk4", .{});
+                module.linkSystemLibrary("gtk-4", .{});
             }
         },
         .wasi => {
